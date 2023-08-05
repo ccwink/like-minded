@@ -1,0 +1,22 @@
+package com.wink.seek.model.request;
+
+import lombok.Data;
+import java.io.Serializable;
+
+/**
+ * 用户加入队伍请求体
+ */
+@Data
+public class TeamJoinRequest implements Serializable {
+    private static final long serialVersionUID = -1315362002694132716L;
+
+    /**
+     * id
+     */
+    private Long teamId;
+
+    /**
+     * 密码
+     */
+    private String password;
+}
